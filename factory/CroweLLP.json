@@ -1,0 +1,9 @@
+{
+	"name": "CroweLLP",
+	"location": "southeastasia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "03e7dd77-5f77-43be-922c-14aea740327c",
+		"tenantId": "6ff60d36-925f-4785-a854-510f909ee561"
+	}
+}
