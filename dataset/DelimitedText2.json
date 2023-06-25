@@ -1,0 +1,28 @@
+{
+	"name": "DelimitedText2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "Input.txt",
+				"container": "source"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "RULE_ID|TRANSACTION_KEY|ACCOUNT_KEY|EXECUTION_LOCAL_DATE_TIME|ACCT_CURR_AMOUNT|SAM_TRANS_TYPE_CD|CUSTOMER_ID",
+				"type": "String"
+			}
+		]
+	}
+}
